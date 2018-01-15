@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.courtapp.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="50dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="monospace"
+                    android:text="TEAM A"
+                    android:textAllCaps="true"
+                    android:textColor="#6A1B9A"
+                     />
+
+                <TextView
+                    android:id="@+id/score_a_team"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="monospace"
+                    android:text="0"
+                    android:textAllCaps="true"
+                    android:textColor="#6A1B9A"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#BA68C8"
+                    android:fontFamily="monospace"
+                    android:onClick="GetThreePointsA"
+                    android:text="+3 points"
+                    android:textAllCaps="true"
+                    android:textColor="#ffffff"
+                    android:textSize="17sp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#BA68C8"
+                    android:fontFamily="monospace"
+                    android:onClick="GetTwoPointsA"
+                    android:text="+2 points"
+                    android:textAllCaps="true"
+                    android:textColor="#ffffff"
+                    android:textSize="17sp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#BA68C8"
+                    android:fontFamily="monospace"
+                    android:onClick="GetOnePointsA"
+                    android:text="free throw"
+                    android:textAllCaps="true"
+                    android:textColor="#ffffff"
+                    android:textSize="17sp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="60dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="monospace"
+                    android:text="TEAM b"
+                    android:textAllCaps="true"
+                    android:textColor="#6A1B9A"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/score_b_team"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="monospace"
+                    android:text="0"
+                    android:textAllCaps="true"
+                    android:textColor="#6A1B9A"
+                    android:textSize="20sp"
+
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="17dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#BA68C8"
+                    android:fontFamily="monospace"
+                    android:onClick="GetThreePointsB"
+                    android:text="+3 points"
+                    android:textAllCaps="true"
+                    android:textColor="#ffffff"
+                    android:textSize="17sp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="17dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#BA68C8"
+                    android:fontFamily="monospace"
+                    android:onClick="GetTwoPointsB"
+                    android:text="+2 points"
+                    android:textAllCaps="true"
+                    android:textColor="#ffffff"
+                    android:textSize="17sp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="17dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#BA68C8"
+                    android:fontFamily="monospace"
+                    android:onClick="GetOnePointsB"
+                    android:text="free throw"
+                    android:textAllCaps="true"
+                    android:textColor="#ffffff"
+                    android:textSize="17sp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="120dp"
+            android:background="#BA68C8"
+            android:fontFamily="monospace"
+            android:onClick="ResetButton"
+            android:text="reset"
+            android:textAllCaps="true"
+            android:textColor="#ffffff"
+
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="#9C27B0">
+
+        </View>
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
